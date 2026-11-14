@@ -944,16 +944,16 @@ const catALot = async ($body: JQuery<HTMLBodyElement>): Promise<void> => {
 									const $element = $(event.currentTarget);
 									this.copyHere($element.closest('tr').data('category') as string);
 								})
-								.text(CAL.msg('copy')),
-							$('<td>').append(
-								$('<a>')
-									.addClass(CLASS_NAME_CONTAINER_DATA_CATEGORY_LIST_ACTION)
-									.on('click', (event): void => {
-										const $element = $(event.currentTarget);
-										this.moveHere($element.closest('tr').data('category') as string);
-									})
-									.text(CAL.msg('move'))
-							)
+								.text(CAL.msg('copy'))
+						),
+						$('<td>').append(
+							$('<a>')
+								.addClass(CLASS_NAME_CONTAINER_DATA_CATEGORY_LIST_ACTION)
+								.on('click', (event): void => {
+									const $element = $(event.currentTarget);
+									this.moveHere($element.closest('tr').data('category') as string);
+								})
+								.text(CAL.msg('move'))
 						)
 					);
 				}

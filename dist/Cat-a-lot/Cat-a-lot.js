@@ -990,10 +990,10 @@ var catALot = async ($body) => {
           $tr.append($("<td>").append($("<a>").addClass(CLASS_NAME_CONTAINER_DATA_CATEGORY_LIST_ACTION).on("click", (event) => {
             const $element = $(event.currentTarget);
             this.copyHere($element.closest("tr").data("category"));
-          }).text(CAL.msg("copy")), $("<td>").append($("<a>").addClass(CLASS_NAME_CONTAINER_DATA_CATEGORY_LIST_ACTION).on("click", (event) => {
+          }).text(CAL.msg("copy"))), $("<td>").append($("<a>").addClass(CLASS_NAME_CONTAINER_DATA_CATEGORY_LIST_ACTION).on("click", (event) => {
             const $element = $(event.currentTarget);
             this.moveHere($element.closest("tr").data("category"));
-          }).text(CAL.msg("move")))));
+          }).text(CAL.msg("move"))));
         }
         this.$resultList.find("table").append($tr);
       }
